@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../5/Images/buildings.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000b4;
+}
+
+/* header section */
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  /* background-color: #000; */
+}
+
+.header .header-logo img {
+  width: 70.08px;
+  height: 67.92px;
+  border: 1px solid #fff;
+}
+
+.header nav ul {
+  list-style: none;
+  color: #000;
+  display: flex;
+}
+
+.header nav ul li {
+  margin: 0px 20px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.header nav ul li a:hover {
+  color: #cc9933;
+}
+
+/* Hero Seciton */
+
+.hero {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 80px;
+}
+
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero .hero-text h1 {
+  margin-bottom: 80px;
+  font-size: 45px;
+  color: #fff;
+}
+
+.hero .hero-text p {
+  font-weight: 500;
+  font-size: 24px;
+  color: #e7af3f;
+}
+
+.hero .hero-text button {
+  padding: 10px 50px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero .hero-text button:hover {
+  background-color: #cc9933;
+  color: #000;
+}
+
+.hero .hero-image {
+  background-image: url("../5/Images/bg.jpg");
+  background-size: cover;
+  background-position-x: 570px;
+  border: 2px solid lightgray;
+  border-radius: 25px;
+  width: 30%;
+  height: 70vh;
+}
+
+.footer {
+  width: 100%;
+  color: #fff;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/* Media Queries */
+
+@media (max-width: 1025px) {
+  .overlay {
+    background-position: center;
+    position: relative;
+  }
+  .hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0px;
+    padding: 0px;
+  }
+
+  .hero .hero-image {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    border: none;
+    border-radius: 0px;
+  }
+
+  .hero .hero-text {
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
+
+  .hero .hero-text p {
+    font-size: 32px;
+  }
+
+  .hero .hero-text button {
+    font-size: 24px;
+    padding: 15px 80px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 10px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 768px){
+  .footer {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+
+  .overlay {
+    background-position: center;
+    position: relative;
+  }
+
+  .header {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 0px 0px;
+  }
+
+  .hero .hero-image {
+    width: 100%;
+    height: 511px;
+    background-position: center;
+  }
+
+  .hero .hero-text {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    text-align: center;
+    padding: 0px 40px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero .hero-text p {
+    font-size: 24px;
+  }
+  .hero .hero-text h1 br {
+    display: none;
+  }
+
+  .hero .hero-text button {
+    font-size: 18px;
+    padding: 10px 50px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 5px;
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 375px) {
+
+  .overlay {
+    background-position: center;
+    position: relative;
+  }
+
+  .header {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 0px 0px;
+    height: 82vh;
+  }
+
+  .hero .hero-image {
+    width: 100%;
+    height: 511px;
+    background-position: center;
+  }
+
+  .hero .hero-text {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px 40px;
+  }
+
+  .hero .hero-text h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero .hero-text p {
+    font-size: 12px;
+  }
+  .hero .hero-text h1 br {
+    display: none;
+  }
+
+  .hero .hero-text button {
+    font-size: 12px;
+    padding: 5px 30px;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 1px;
+    font-size: 8px;
+  }
+}
